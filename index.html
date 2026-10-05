@@ -1,143 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Crystal Glass UI</title>
-    <meta
-      name="description"
-      content="Crystal Glass 3D UI landing page with transparent glass effects and polished reflections."
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <div class="page-shell">
-      <div class="orb orb-1"></div>
-      <div class="orb orb-2"></div>
-      <div class="orb orb-3"></div>
-
-      <header class="topbar glass-panel">
-        <div class="brand-wrap">
-          <div class="brand-mark">C</div>
-          <span>Crystal</span>
-        </div>
-
-        <nav class="nav">
-          <a href="#features">Features</a>
-          <a href="#showcase">Showcase</a>
-          <a href="#pricing">Pricing</a>
-        </nav>
-
-        <button class="nav-button">Book a Demo</button>
-      </header>
-
-      <main class="hero">
-        <div class="hero-copy">
-          <div class="eyebrow glass-pill">Next-gen product experience</div>
-
-          <h1>
-            Design for a world that feels<br />
-            <span>clearer, brighter, and more alive.</span>
-          </h1>
-
-          <p>
-            Build landing pages that shimmer with layered glass, precise reflections,
-            and purposeful depth. Crafted to feel premium, immersive, and unmistakably modern.
-          </p>
-
-          <div class="cta-row">
-            <button class="primary-btn">Get Started</button>
-            <button class="secondary-btn">Watch Overview</button>
-          </div>
-
-          <div class="metrics glass-panel">
-            <div>
-              <strong>4.9/5</strong>
-              <span>Customer satisfaction</span>
-            </div>
-            <div>
-              <strong>12k+</strong>
-              <span>UI experiences shipped</span>
-            </div>
-            <div>
-              <strong>3x</strong>
-              <span>Faster design iteration</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="hero-visual" id="showcase">
-          <div class="glass-stage glass-panel">
-            <div class="floating-card card-a glass-panel">
-              <div class="mini-label">Live Growth</div>
-              <div class="chart">
-                <span class="bar b1"></span>
-                <span class="bar b2"></span>
-                <span class="bar b3"></span>
-                <span class="bar b4"></span>
-                <span class="bar b5"></span>
-              </div>
-              <div class="stat-row">
-                <div>
-                  <small>Revenue</small>
-                  <strong>$84.2K</strong>
-                </div>
-                <div class="up">+18.4%</div>
-              </div>
-            </div>
-
-            <div class="floating-card card-b glass-panel">
-              <div class="mini-label">Engagement</div>
-              <div class="ring-wrap">
-                <div class="ring">
-                  <div class="ring-inner">82%</div>
-                </div>
-              </div>
-            </div>
-
-            <div class="center-panel glass-panel">
-              <div class="center-top">
-                <span class="dot"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-              </div>
-              <div class="data-block">
-                <span class="tiny-label">Quarterly Impact</span>
-                <h3>+234%</h3>
-                <p>Conversion lift</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </main>
-
-      <section class="feature-grid" id="features">
-        <article class="feature glass-panel">
-          <div class="icon">✦</div>
-          <h3>Crystal clarity</h3>
-          <p>Lightweight, transparent layers built to highlight content without visual noise.</p>
-        </article>
-
-        <article class="feature glass-panel">
-          <div class="icon">◎</div>
-          <h3>Reflective depth</h3>
-          <p>High-contrast highlights and precision gradients simulate premium glass surfaces.</p>
-        </article>
-
-        <article class="feature glass-panel">
-          <div class="icon">▣</div>
-          <h3>Immersive motion</h3>
-          <p>Subtle motion and soft perspective create a tactile, polished product story.</p>
-        </article>
-      </section>
-    </div>
-
-    <script src="script.js"></script>
-  </body>
-</html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Crystal Glass 3D UI — a premium glassmorphism landing page with polished reflections and depth.">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests">
+<meta http-equiv="X-Content-Type-Options" content="nosniff">
+<title>Crystal Glass UI</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="page-shell">
+<div class="orb orb-1" aria-hidden="true"></div><div class="orb orb-2" aria-hidden="true"></div><div class="orb orb-3" aria-hidden="true"></div>
+<header class="topbar glass-panel">
+<a class="brand-wrap" href="#" aria-label="Crystal Glass home"><span class="brand-mark" aria-hidden="true">C</span><span>Crystal</span></a>
+<nav class="nav" aria-label="Primary navigation"><a href="#features">Features</a><a href="#showcase">Showcase</a><a href="#pricing">Pricing</a></nav>
+<a class="nav-button" href="#showcase">Book a Demo</a>
+</header>
+<main>
+<section class="hero" aria-labelledby="hero-title">
+<div class="hero-copy"><div class="eyebrow glass-pill">Next-gen product experience</div>
+<h1 id="hero-title">Design for a world that feels<br><span>clearer, brighter, and more alive.</span></h1>
+<p>Build landing pages that shimmer with layered glass, precise reflections, and purposeful depth. Crafted to feel premium, immersive, and unmistakably modern.</p>
+<div class="cta-row"><a class="primary-btn" href="#features">Get Started</a><a class="secondary-btn" href="#showcase">Watch Overview</a></div>
+<div class="metrics glass-panel" aria-label="Product metrics"><div><strong>4.9/5</strong><span>Customer satisfaction</span></div><div><strong>12k+</strong><span>UI experiences shipped</span></div><div><strong>3x</strong><span>Faster design iteration</span></div></div>
+</div>
+<div class="hero-visual" id="showcase" aria-label="Interactive product showcase"><div class="glass-stage glass-panel">
+<div class="floating-card card-a glass-panel" tabindex="0"><div class="mini-label">Live Growth</div><div class="chart" aria-hidden="true"><span class="bar b1"></span><span class="bar b2"></span><span class="bar b3"></span><span class="bar b4"></span><span class="bar b5"></span></div><div class="stat-row"><div><small>Revenue</small><strong>$84.2K</strong></div><div class="up">+18.4%</div></div></div>
+<div class="floating-card card-b glass-panel" tabindex="0"><div class="mini-label">Engagement</div><div class="ring-wrap"><div class="ring" aria-label="82 percent engagement"><div class="ring-inner">82%</div></div></div></div>
+<div class="center-panel glass-panel" tabindex="0"><div class="center-top" aria-hidden="true"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div><div class="data-block"><span class="tiny-label">Quarterly Impact</span><h3>+234%</h3><p>Conversion lift</p></div></div>
+</div></div>
+</section>
+<section class="feature-grid" id="features" aria-labelledby="features-title"><h2 id="features-title" class="sr-only">Features</h2>
+<article class="feature glass-panel"><div class="icon" aria-hidden="true">✦</div><h3>Crystal clarity</h3><p>Lightweight, transparent layers built to highlight content without visual noise.</p></article>
+<article class="feature glass-panel"><div class="icon" aria-hidden="true">◎</div><h3>Reflective depth</h3><p>High-contrast highlights and precision gradients simulate premium glass surfaces.</p></article>
+<article class="feature glass-panel"><div class="icon" aria-hidden="true">▣</div><h3>Immersive motion</h3><p>Subtle motion and soft perspective create a tactile, polished product story.</p></article>
+</section>
+<section class="pricing glass-panel" id="pricing" aria-labelledby="pricing-title"><div><span class="eyebrow">Simple launch</span><h2 id="pricing-title">Premium UI, without unnecessary complexity.</h2></div><a class="primary-btn" href="#showcase">Explore the demo</a></section>
+</main></div>
+<script src="script.js" defer></script>
+</body></html>
