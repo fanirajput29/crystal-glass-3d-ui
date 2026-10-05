@@ -1,27 +1,15 @@
-document.addEventListener('DOMContentLoaded', () => {
-  const cards = document.querySelectorAll('.floating-card, .center-panel');
-
-  cards.forEach((card, index) => {
-    card.style.transform += ' translateZ(0)';
-    card.addEventListener('pointermove', (event) => {
-      const rect = card.getBoundingClientRect();
-      const x = (event.clientX - rect.left) / rect.width;
-      const y = (event.clientY - rect.top) / rect.height;
-
-      const rotateY = (x - 0.5) * 10;
-      const rotateX = (0.5 - y) * 10;
-
-      card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
-    });
-
-    card.addEventListener('pointerleave', () => {
-      if (index === 0) {
-        card.style.transform = 'rotate(-10deg)';
-      } else if (index === 1) {
-        card.style.transform = 'rotate(9deg)';
-      } else {
-        card.style.transform = 'translate(-50%, -50%)';
-      }
-    });
-  });
+(() => {
+'use strict';
+const cards=document.querySelectorAll('.floating-card,.center-panel');
+if(window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+cards.forEach((card,index)=>{
+ const base=index===0?'rotate(-10deg)':index===1?'rotate(9deg)':'translate(-50%,-50%)';
+ card.style.transform=base;
+ card.addEventListener('pointermove',event=>{
+  const rect=card.getBoundingClientRect(),x=(event.clientX-rect.left)/rect.width,y=(event.clientY-rect.top)/rect.height;
+  const ry=(x-.5)*10,rx=(.5-y)*10,offset=index===2?'translate(-50%,-50%) ':'';
+  card.style.transform=offset+'perspective(1000px) rotateX('+rx+'deg) rotateY('+ry+'deg)';
+ },{passive:true});
+ card.addEventListener('pointerleave',()=>{card.style.transform=base});
 });
+})();
